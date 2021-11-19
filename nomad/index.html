@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <title>Shopcada assignment</title>
+        <style> 
+            /* Navigation bar */
+            nav.navbar {
+                padding: 20px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            ul {
+                list-style-type: none;
+                overflow: hidden;
+            }
+            li {
+                float: left;
+            }
+            .container {
+                float: right;
+                display: flex;
+                padding-top: 12px;
+            }
+            ul.menu li a{
+                text-decoration: none;
+                color: #666666;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            ul.commerce li a img {
+                width: 16px;
+                padding: 7px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            p#cart-number {
+                color: orange;
+                margin: 6px;
+            }
+            /* Header */
+            .header {
+                text-align: -webkit-center;
+                background-color: #F76F4B;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            /* Breadcrumb */
+            ul.breadcrumb{
+                margin-left: 40px;
+                padding-top: 40px;
+            }
+            ul.breadcrumb li {
+                display: inline;
+                font-size: 18px;
+            }
+            ul.breadcrumb li+li:before {
+                padding: 8px;
+                content: "/";
+            }
+            ul.breadcrumb li a {
+                color: #F76F4B;
+                text-decoration: none;
+            }
+            /* Product display */
+            ul.product {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                text-align: center;
+                padding: 20px;
+                margin-top: 120px;
+                margin-bottom: 120px;
+            }
+            ul.product li{
+                padding-bottom: 50px;
+            }
+            ul.product li img {
+                border-bottom: 1px solid grey;
+                margin-bottom: -12px;
+            }
+            .desc {
+                padding-top: 15px;
+                padding-bottom: 10px;
+                font-weight: bold;
+            }
+            .price {
+                color: #F76F4B;
+            }
+            /* Body */
+            body { 
+                margin: 0;
+                font-family: Roboto;
+                color: #666666;
+            }
+            /* Footer */
+            .footer {
+                background-color: #4E4846;
+                padding: 40px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+            }
+            .column {
+               padding-right: 50px; 
+            }
+            .column ul li{
+                float: none;
+            }
+            .column ul li a{
+                color: #998f8c;
+                text-decoration: none;
+            }
+            ul.split{
+                columns: 2;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+            }
+            ul.split li{
+                padding-right: 30px;
+            }
+            .column img {
+                margin-top: 20px;
+            }
+            h4 {
+                color: white;
+                padding-left: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Write your comments here -->
+        <nav class="navbar">  
+            <ul>
+                <li class="logo"><a id="logo" href="#default"><img src="image/Nomad-Bag.png"></a></li>
+                <div class="container">
+                    <ul class="menu">
+                        <li><a href="#1">HOME</a></li>
+                        <li><a href="#2">COLLECTION</a></li>
+                        <li><a href="#3">BLOG</a></li>
+                    </ul>
+                    <ul class="commerce">
+                        <li><a href="#profile"><img src="image/icons/profile.png" ></a></li>
+                        <li><a href="#search"><img src="image/icons/search.png" style="border-right:1px solid grey; border-left:1px solid grey; "></a></li>
+                        <li><a href="#cart"><img src="image/icons/cart.png"></a></li> 
+                        <li><p id="cart-number">1</p></li>     
+                    </ul>
+                </div>
+                
+            </ul>
+        </nav>
+        <!-- Write your comments here -->
+        <div class="header" style="color:white;"><h1>NEW ARRIVAL</h1></div>
+        <!-- Write your comments here -->
+        <div class="breadcrumbdiv">
+            <ul class="breadcrumb"> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Collection</a></li>
+                <li>Shoulder Bag</li>
+            </ul>
+        </div>
+        <!-- Write your comments here -->
+        <div class="product-table">
+            <ul class="product" style="list-style-type:none;">
+                <li>
+                    <img src="image/products/item-1.png"> 
+                    <hr style="border-top: 3px solid; width: 30px;">
+                    <div class="desc">Extra-Large Madison Handbag</div>
+                    <div class="price">$76.00</div>
+                </li>
+                <li>
+                    <img src="image/products/item-2.png">
+                    <hr style="border-top: 3px solid; width: 30px;">
+                    <div class="desc">Extra-Large Madison Handbag</div>
+                    <div class="price">$76.00</div>
+                </li>
+                <li>
+                    <img src="image/products/item-3.png">
+                    <hr style="border-top: 3px solid; width: 30px;">
+                    <div class="desc">Extra-Large Madison Handbag</div>
+                    <div class="price">$76.00</div>
+                </li>
+                <li>  
+                    <img src="image/products/item-4.png">
+                    <hr style="border-top: 3px solid; width: 30px;">  
+                    <div class="desc">Extra-Large Madison Handbag</div>
+                    <div class="price">$76.00</div>
+                </li>
+                <li>
+                    <img src="image/products/item-5.png">
+                    <hr style="border-top: 3px solid; width: 30px;">
+                    <div class="desc">Extra-Large Madison Handbag</div>
+                    <div class="price">$76.00</div>
+                </li>
+                <li>   
+                    <img src="image/products/item-6.png">
+                    <hr style="border-top: 3px solid; width: 30px;">
+                    <div class="desc">Extra-Large Madison Handbag</div>
+                    <div class="price">$76.00</div>
+                </li>
+            </ul>
+        </div>
+        <!-- Write your comments here -->
+        <div class="footer">
+            <div class="column">
+                <img src="image/Nomad-Bag-footer.png">
+                <p style="color: #746c69;">&#169;2016 Nomad Bag Store<br>All right reserved.</p>
+            </div>
+            <div class="column">
+                <h4>NOMAD BAG STORE</h4>
+                <ul>
+                    <li><a href="#default">About Us</a></li>
+                    <li><a href="#default">Contact Us</a></li>
+                    <li><a href="#default">Terms and Conditions</a></li>
+                    <li><a href="#default">Privacy and Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>ACCOUNT</h4>
+                <ul>
+                    <li><a href="#default">Your Account</a></li>
+                    <li><a href="#default">Order Status</a></li>
+                    <li><a href="#default">Wishlist</a></li>
+                </ul>  
+            </div>
+            <div class="column">  
+                <h4>CUSTOMER CARE</h4>     
+                <ul class="split">
+                    <li><a href="#default">Ordering and Payment</a></li>
+                    <li><a href="#default">Shipping</a></li>
+                    <li><a href="#default">Return and Exchange</a></li>
+                    <li><a href="#default">Track Order</a></li>
+                    <li><a href="#default">FAQ</a></li>
+                    <li><a href="#default">Rewards</a></li>
+                    <li><a href="#default">Refer Friends</a></li>
+                    <li><a href="#default">Gift Voucher</a></li>
+                </ul>       
+            </div>
+        </div>
+        <script>
+        </script>
+    </body>
+</html>
